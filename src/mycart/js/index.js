@@ -23,9 +23,15 @@ var vmCart = new Vue({
 			// 如果要使用vmCart实例，
 			// 就必须在mounted钩子函数里再调用一次$nextTick方法才能保证el被render在dom中
 			function(retObj){
+<<<<<<< HEAD
 				if(retObj.status === 200){
 					vmCart.list = retObj.data.result.list;
 					console.log(vmCart.list);
+=======
+				if(retObj.status == 200){
+					vmCart.list = retObj.result.list;
+					console.log(retObj.result.list);
+>>>>>>> 041d0a4083686a7ee83a4fbaa8d1201fcf36dc50
 				}
 			}
 			)
