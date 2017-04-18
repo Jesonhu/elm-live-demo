@@ -10,7 +10,7 @@ var vmCart = new Vue({
 	mounted:function(){
 		var _this = this;
 		this.$nextTick(function(){
-			axios.get('http://github.easysolves.com/src/mycart/data/cartData.json')
+			axios.get('data/cartData.json')
 			.then(
 			// 使用箭头函数的话，this的作用域并不会变，还是指向vmCart
 			// 	(retObj)=>{
@@ -23,8 +23,9 @@ var vmCart = new Vue({
 			// 如果要使用vmCart实例，
 			// 就必须在mounted钩子函数里再调用一次$nextTick方法才能保证el被render在dom中
 			function(retObj){
-				if(retObj.status == 200){
-					vmCart.list = retObj.result.list;
+				if(retObj.status === 200){
+					vmCart.list = retObj.data.result.list;
+					console.log(vmCart.list);
 				}
 			}
 			)
