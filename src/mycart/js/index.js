@@ -24,7 +24,7 @@ var vmCart = new Vue({
 			// 就必须在mounted钩子函数里再调用一次$nextTick方法才能保证el被render在dom中
 			function(retObj){
 				if(retObj.status == 200){
-					vmCart.list = retObj.data.result.list;
+					vmCart.list = retObj.result.list;
 				}
 			}
 			)
