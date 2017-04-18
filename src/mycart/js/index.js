@@ -25,6 +25,7 @@ var vmCart = new Vue({
 			function(retObj){
 				if(retObj.status == 200){
 					vmCart.list = retObj.result.list;
+					console.log(retObj.result.list);
 				}
 			}
 			)
