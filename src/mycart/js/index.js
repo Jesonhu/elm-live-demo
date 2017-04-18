@@ -10,7 +10,7 @@ var vmCart = new Vue({
 	mounted:function(){
 		var _this = this;
 		this.$nextTick(function(){
-			axios.get('http://github.easysolves.com/src/mycart/data/cartData.json')
+			axios.get('data/cartData.json')
 			.then(
 			// 使用箭头函数的话，this的作用域并不会变，还是指向vmCart
 			// 	(retObj)=>{
