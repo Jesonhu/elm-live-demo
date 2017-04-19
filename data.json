@@ -3,7 +3,7 @@
     "name": "粥品香坊（回龙观）",
     "description": "蜂鸟专送",
     "deliveryTime": 38,
-    "score": 4.5,
+    "score": 4.2,
     "serviceScore": 4.1,
     "foodScore": 4.3,
     "rankRate": 69.2,
@@ -142,6 +142,13 @@
               "rateTime": 1469271264000,
               "rateType": 1,
               "text": "很一般啊",
+              "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
+            },
+            {
+              "username": "3******b",
+              "rateTime": 1469261964000,
+              "rateType": 0,
+              "text": "",
               "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
             }
           ],
