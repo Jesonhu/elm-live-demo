@@ -1,0 +1,483 @@
+@charset "UTF-8";
+/*页面相同样式*/
+	div.wrap{
+		min-width:1120px;
+	}
+	div.content{
+		width:1120px;
+		margin:0 auto;
+	}
+
+/*无缝轮播样式*/
+	div.b-pic{
+		width:100%;
+		height:100%;
+		overflow:hidden;
+	}
+	div.b-pic ul{
+		margin:0px;
+		padding:0px;
+		width:700%;
+	}
+	div.b-pic ul li{
+		float:left;
+	}
+	div.tab{
+		position:absolute;
+		bottom:10px;
+		left:50%;
+		margin-left:-30px;
+		z-index:9;
+	}
+	div.tab ul li{
+		float:left;
+		width:9px;
+		height:9px;
+		margin:0px 3px;
+		background-color:#b0b0b0;
+		cursor:pointer;
+	}
+	div.tab ul li.hover{
+		background-color:#E5077C;
+	}
+	div.button{
+		/*position:relative;
+		top:-267px;*/
+	}
+	div.button a{
+		display:block;
+		width:37px;
+		height:73px;
+		position:absolute;
+		top:50%;
+		margin-top:-36px;
+	}
+	div.button a.prev{
+		background:url('../images/new-prev01.png') no-repeat;
+		left:0px;
+	}
+	div.button a.next{
+		background:url('../images/new-next01.png') no-repeat;
+		right:0px;
+	}
+
+/*==公共标题==*/
+	/*div.top-title{
+		height:102px;
+	}*/
+	div.top-title p.t-t-logo{
+		height:58px;
+		margin:0px;
+		border-bottom:1px solid #000;
+	}
+	div.top-title p.t-t-logo span{
+		display:block;
+		height:56px;
+		line-height:56px;
+		width:254px;
+		margin:0 auto;
+		background:green url('../images/indexPic.png') no-repeat;
+	}
+	div.top-title div.t-nav-tips{
+		height:44px;
+	}
+	div.top-title div.t-nav-tips ul{
+		padding:0px;
+		height:34px;
+		padding-top:10px;
+		margin:0 auto;
+	}
+	div.top-title div.t-nav-tips ul.num5{
+		width:670px;
+	}
+	div.top-title div.t-nav-tips ul li{
+		float:left;
+	}
+	div.top-title div.t-nav-tips ul li a{
+		display:inline-block;
+		text-decoration:none;
+		width:130px;
+		text-align:center;
+		color:#000;
+		font-size:14px;
+	}
+	div.top-title div.t-nav-tips ul li a:hover{
+		color:#E5077C;
+	}
+/*==c-Img3==*/
+	div.c-Img3{
+		width:1120px;
+		height:275px;
+		margin:18px 0px;
+	}
+	div.c-Img3 ul{
+		margin:0px;
+	}
+	div.c-Img3 ul li{
+		float:left;
+		width:355px;
+		height:275px;
+	}
+	div.c-Img3 ul li:nth-child(2){
+		margin:0px 27px;
+	}
+	div.c-Img3 ul li a{
+		text-decoration:none;
+		color:#000;
+	}
+	div.c-Img3 ul li a h4{
+		margin:0px;
+		padding:0px;
+		height:45px;
+		line-height:45px;
+		text-align:center;
+		font-family:'Microsoft yahei';
+		font-size:16px;
+	}
+
+/*==slide==*/
+	div.slide{
+		width:355px;
+		height:535px;
+		position:relative;
+		overflow:hidden;
+		font-family:'Microsoft yahei';
+	}
+	div.slide ul{
+		margin:0px;
+		padding:0px;
+		width:400%;
+	}
+	div.slide ul li{
+		list-style:none;
+		float:left;
+	}
+	div.slide div.pic-img li{
+		width:355px;
+		height:535px;
+	}
+	div.slide div.button{
+		top:50%;
+		margin-top:-60px;
+	}
+	div.slide div.c3-c-text{
+		position:absolute;
+		width:355px;
+		height:104px;
+		bottom:0px;
+		left:0px;
+		text-align:center;
+		background:rgba(255,255,255,.0);
+		color:#fff;
+		padding:0px 10px;
+		overflow:hidden;
+	}
+	div.slide div.c3-c-text>div{
+		display:none;
+	}
+	div.slide div.c3-c-text>div:first-child{
+		display:block;
+	}
+	div.m-col{
+		width:355px;
+		height:535px;
+		float:left;
+		font-family:'Microsoft yahei';
+	}
+	div.m-col li{
+		position:relative;
+	}
+	div.m-col h5{
+		position:absolute;
+		bottom:10px;
+		padding:0px 10px;
+		width:100%;
+		margin:0px;
+		color:#fff;
+		text-align:center;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
+	div.m-col2{
+		margin:0px 27px;
+	}
+	div.m-col2 ul li{
+		float:left;
+		width:170px;
+		height:260px;
+		overflow:hidden;
+		margin-bottom:15px;
+	}
+	div.m-col2 ul li.even{
+		margin-left:15px;
+	}
+	div.m-col div.text-scroll{
+		width:355px;
+		height:255px;
+		border:8px solid #f2f2f2;
+		background-color:#fff;
+		position:relative;
+		bottom:-30px;
+		overflow:hidden;
+		padding:15px 20px;
+	}
+	div.text-scroll ul li{
+		height:30px;
+		width:100%;
+		line-height:30px;
+		background:url('../images/indexPic.png') no-repeat;
+		text-indent:30px;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		transition:0.3s linear;
+		-webkit-transition:0.3s linear;
+	}
+	div.text-scroll ul li.hover{
+		margin-left:15px;
+	}
+	div.text-scroll ul li.hover a{
+		color:#887A7A;
+	}
+	div.text-scroll ul li a{
+		color:#000;
+		text-decoration:none;
+	}
+	div.text-scroll ul li.one{
+		background-position:-440px 6px;
+	}
+	div.text-scroll ul li.two{
+		background-position:-440px -194px;
+	}
+	div.text-scroll ul li.three{
+		background-position:-440px -34px;
+	}
+	div.text-scroll ul li.four{
+		background-position:-440px -235px;
+	}
+	div.text-scroll ul li.five{
+		background-position:-440px -73px;
+	}
+	div.text-scroll ul li.six{
+		background-position:-440px -274px;
+	}
+	div.text-scroll ul li.seven{
+		background-position:-440px -114px;
+	}
+
+/*==bottom-arousel==*/
+	div.bottom-arousel{
+		box-sizing:content-box;
+		width:1100px;
+		height:252px;
+		margin-top:30px;
+		margin-bottom:30px;
+		padding:20px 10px;
+		background-color:#f2f2f2;
+		box-shadow:0px 4px 6px #ddd inset;
+		overflow:hidden;
+		position:relative;
+	}
+	ul.b-a-mul{
+		margin:0px;
+		padding:0px;
+		height:252px;
+		width:404%;
+	}
+	ul.b-a-mul li{
+		float:left;
+	}
+	ul.b-a-mul>li{
+		float:left;
+		width:1100px;
+		height:252px;
+	}
+	ul.b-a-mul>li>ul{
+		width:100%;
+		height:100%;
+	}
+	ul.b-a-mul>li>ul>li{
+		width:275px;
+		height:252px;
+		padding:0px 6px;
+	}
+	ul.b-a-mul>li>ul>li h4{
+		height:55px;
+		line-height:35px;
+		text-align:center;
+	}
+	div.bottom-arousel div.tab{
+		bottom:9px;
+	}
+	
+
+/*life-hot*/
+	div.life-hot{
+		height:78px;
+		width:355px;
+		position:relative;
+		border:1px solid #ddd;
+		bottom:-2px;
+	}
+	div.life-hot em.top-clearline{
+		display:block;
+		width:109px;
+		height:17px;
+		line-height:17px;
+		text-align:center;
+		position:absolute;
+		left:50%;
+		margin-left:-54px;
+		top:-10px;
+		color:#e50a80;
+		background:url('../images/indexPic.png') no-repeat -80px -678px;
+	}
+	div.life-hot div.l-h-content{
+		padding:15px 2px;
+		overflow:hidden;
+	}
+	div.life-hot div.l-h-content a{
+		display:block;
+		padding:3px 11px;
+		color:#000;
+		text-decoration:none;
+		float:left;
+	}
+	div.life-hot div.l-h-content a:hover{
+		color:#e50a80;
+	}
+
+/*==c6-pic==*/
+	div.pic{
+		position:relative;
+	}
+	div.pica{
+		width:350px;
+	}
+	div.c6-pic1{
+		top:0px;
+	}
+	div.pica div.c6-pic2{
+		top:261px;
+	}
+/*--picb--*/
+	div.picb{
+		width:350px;
+		margin:0px 10px;
+	}
+	div.picb div.c6-pic2{
+		top:190px;
+	}
+	div.picb div.c6-pic3{
+		top:421px;
+	}
+/*--picc--*/
+	div.picc{
+		width:400px;
+	}
+	div.picc div.c6-pic2{
+		top:350px;
+	}
+	div.pic>a{
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	div.pic>a>div.pic-text{
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		height:65px;
+		line-height:65px;
+		width:100%;
+		background:url('../images/star_shadow_bg.png') 0px 0px;
+		text-align:center;
+		color:#fff;
+		text-decoration:none;
+	}
+
+/*==footer==*/
+	div#footer{
+		background-color:#f6f6f6;
+	}
+	div#footer ul{
+		margin:0px;
+		padding:0px;
+	}
+	div#footer ul.top-nav{
+		height:60px;
+	}
+	div#footer ul li{
+		list-style:none;
+		float:left;
+	}
+	div#footer ul.top-nav li{
+		height:60px;
+		line-height:60px;
+		font-size:12px;
+		color:#797171;
+		margin:0px 20px;
+		cursor:pointer;
+	}
+	div#footer ul.top-nav li.on{
+		font-size:18px;
+		color:#000;
+	}
+	div#footer div.list li a{
+		display:inline-block;
+		height:16px;
+		padding:0px 3px;
+		color:#000;
+		font-size:12px;
+	}
+	div#footer div.sub-nav>div{
+		display:none;
+	}
+	div#footer div.f-c-copy{
+		width:990px;
+		margin:30px auto;
+		margin-bottom:0px;
+	}
+	div#footer div.f-c-copy div.f-c-c-top ul{
+		width:808px;
+		margin:0 auto;
+	}
+	div#footer div.f-c-copy div.f-c-c-top div.explain{
+		width:990px;
+		padding:15px 105px;
+		overflow:hidden;
+		border-bottom:1px solid #ccc;
+	}
+	div#footer div.f-c-copy div.f-c-c-top div.explain div.f-c-c-t-e-left{
+		padding-right:10px;
+	}
+	div#footer div.f-c-copy div.f-c-c-top div.explain div.f-c-c-t-e-right{
+		float:left;
+		width:646px;
+		font-size:12px;
+	}
+	div#footer div.f-c-copy div.f-c-c-allow>ul{
+		margin:10px 0px;
+	}
+	div#footer div.f-c-copy div.f-c-c-allow>ul>li{
+		float:left;
+		width:290px;
+		font-size:12px;
+		margin:0px 20px;
+	}
+	div#footer div.f-c-copy div.f-c-c-allow>div{
+		width:526px;
+		margin:0 auto;
+	}
+	div#footer div.f-c-copy div.f-c-c-allow>div li{
+		margin:0px 5px;
+	}
+	div#footer div.f-c-copy div.f-c-c-allow>div>div{
+		padding-top:5px;
+		padding-bottom:20px;
+		text-align:center;
+	}
+	div#footer div.f-c-copy div.f-c-c-allow>div>div a{
+		color:#000;
+	}

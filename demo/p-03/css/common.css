@@ -1,0 +1,90 @@
+body,
+div,
+p,
+ul,
+li,
+a{
+	margin:0px;
+	padding:0px;
+}
+
+html,
+body{
+	width:100%;
+	height:100%;
+	font:12px Arial,Helvetica,sans-serif;
+	color:#333;
+}
+
+a{
+	text-decoration:none;
+	color:#666;
+}
+
+ul,
+li,
+dl,
+dt,
+dd{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+.wrap{
+	width:100%;
+}
+
+.content{
+	width:1200px;
+	margin:0 auto;
+}
+
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+.clearLine{
+	height:1px;
+	position:absolute;
+	background:#fff;
+	display:none;
+}
+
+.clearfix:after{
+	content:'';
+	display:block;
+	height:0;
+	overflow:hidden;
+	clear:both;
+}
+
+i,
+em{	
+	background:url("../images/indexhead_sprite.png") no-repeat;
+}
+
+a.blue_link{
+	color:#06c;
+}
+a.blue_link:hover{
+	color:#F60;
+}
+a.red_link:hover{
+	color:#E60012;
+}
+
+input:focus{
+	outline:none;
+}
+
+.showOff{
+	display:none;
+}
+.showOn{
+	display:block;
+}

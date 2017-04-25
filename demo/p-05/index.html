@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		<meta name="keywords" content="网页关键词（不超过31个字）">
+		<meta name="description" content="关键词描述(不超过76个字)">
+		<meta name="author" content="Jeson">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bootstrap项目</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--<link rel="stylesheet" href="css/common.css" />-->
+		<link rel="stylesheet" href="css/index.css" />
+		<style></style>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!--navbar-start-->
+		<nav class="navbar navbar-inverse navbar-fixed-top nav-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle"  data-toggle="collapse" data-target="#topNav" >
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="" class="navbar-logo" >
+						easysolves
+					</a>
+				</div>
+				<div id="topNav" class="navbar-collapse collapse" >
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#con1"> 
+								<span class="glyphicon glyphicon-th-large"></span>
+								<span class="nav3d" data-hover="相关介绍">相关介绍</span>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#con2" data-toggle="dropdown" class="dropdown-toggle">
+								<span class="glyphicon glyphicon-screenshot"></span>
+								<span class="nav3d" data-hover="技能">技能</span>
+							</a>
+							
+						</li>
+						<li>
+							<a href="#con3">
+								<span class="glyphicon glyphicon-user"></span>
+								<span class="nav3d" data-hover="联系我">联系我</span>
+							</a>
+						</li>
+						<li>
+							<a href="#topLogin" data-toggle="modal">
+								<span class="glyphicon glyphicon-envelope"></span>登录注册
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--模态框 start-->
+			<div class="modal fade" id="topLogin" aria-hidden="true" aria-labelledby="#topLoginTitle">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 id="topLoginTitle">赶紧加入我们吧！！！</h4>
+						</div>
+						<div class="modal-body">
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon">邮箱：</span>
+								<input type="input" class="form-control" name="login-email" />
+							</div>
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon">密码：</span>
+								<input type="password" class="form-control" name="login-pwd" />
+								<span class="input-group-btn">
+									<button class="btn btn-success" type="button">登录</button>
+								</span>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="m-f-aLink clearfix">
+								<a href="" class="fl">忘记密码？</a>
+								<a href="" class="fr">注册新用户</a>
+							</div>
+							<div class="footer-icon">
+							页脚最底部
+								
+							
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		<!--end 模态框-->
+		<!--end navbar-->
+		<!--top-search start-->
+		<div id="top-search" class="visible-lg visible-md">
+			<div class="container">
+				<div style="width:504px;margin:30px auto;">
+					<p>
+						<img src="images/ggc.png" alt="ggc" />
+					</p>
+					<div class="list-group">
+						<div class="input-group">
+							<input type="text" class="form-control input-sm" />
+							<span class="input-group-btn">
+								<button type="button" class="btn btn-default btn-sm">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end top-search-->
+		<!--detail-nav start-->
+		<div id="detail-nav" class="visible-lg visible-md">
+			<div class="container d-nav">
+				<ul>
+					<li class="lg md">
+						<a href="" for=".ui"><em class="glyphicon glyphicon-magnet"></em>UI<em class="caret"></em></a>|
+					</li>
+					<li class="lg md"><a href="" for=".sr">
+						<em class="glyphicon glyphicon-tree-conifer"></em>输入
+						<em class="caret"></em></a>|
+					</li>
+					<li class="lg md"><a href="" for=".mt"><em class="glyphicon glyphicon-headphones"></em>媒体<em class="caret"></em></a>|</li>
+					<li class="lg md"><a href="" for=".dh"><em class="glyphicon glyphicon-th-list"></em>导航<em class="caret"></em></a>|</li>
+					<li class="lg md"><a href="" for=".other"><em class="glyphicon glyphicon-tree-conifer"></em>其他<em class="caret"></em></a>|</li>
+					<li class="lg visible-lg"><a href=""><em class="glyphicon glyphicon-tree-conifer"></em>在线代码</a>|</li>
+					<li class="lg visible-lg"><a href=""><em class="glyphicon glyphicon-tree-conifer"></em>Json在线工具</a></li>
+				</ul>
+			</div>
+			<div class="sub-nav">
+				<ul class="container ui">
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>u1</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>u2</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>u3</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>u4</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>u5</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>u6</a></li>
+				</ul>
+				<ul class="container sr">
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>s1</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>s2</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>s3</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>s4</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>s5</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>s6</a></li>
+				</ul>
+				<ul class="container mt">
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>m1</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>m2</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>m3</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>m4</a></li>
+				</ul>
+				<ul class="container dh">
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>d1</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>d2</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>d3</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>d4</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>d5</a></li>
+				</ul>
+				<ul class="container other">
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>o1</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>o2</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>o3</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>o4</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>o5</a></li>
+					<li class="col-lg-3 col-md-6"><a href=""><em class="glyphicon glyphicon-cloud"></em>o6</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--end detail-nav-->
+		<!--主体 start-->
+			<div id="con1" class="con visible-lg visible-md">
+				<div class="c1-wrap front clearfix">
+					<a href="" class="pull-left">
+						<img src="images/header/anim1-1.png" alt="anim1-1" class="img1-1"/>
+						<img src="images/header/anim1-2.png" alt="anim1-2" class="img1-2"/>
+						<img src="images/header/anim1-3.png" alt="anim1-3" class="img1-3"/>
+					</a>
+					<div class="c1-w-right pull-left">
+						<h2>前端技术</h2>
+						<p>HTML / CSS / JS / HTML5/...</p>
+					</div>
+				</div>
+				<div class="c1-wrap back clearfix">
+					<a href="" class="pull-left">
+						<img src="images/header/anim2-1.png" alt="anim2-1" class="img2-1"/>
+						<img src="images/header/anim2-2.png" alt="anim2-2" class="img2-2"/>
+					</a>
+					<div class="c1-w-right pull-left">
+						<h2>后台技术</h2>
+						<p>WORDPRESS / CMS / PHP / MYSQL /Node.js/... </p>
+					</div>
+				</div>
+				<div class="c1-wrap mobil clearfix">
+					<a href="" class="pull-left">
+						<img src="images/header/anim3-1.png" alt="anim3-1" class="img3-1"/>
+						<img src="images/header/anim3-2.png" alt="anim3-2" class="img3-2"/>
+						<img src="images/header/anim3-3.png" alt="anim3-3" class="img3-3"/>
+					</a>
+					<div class="c1-w-right pull-left">
+						<h2>移动技术</h2>
+						<p>ANDROID / IOS / WINDOWS PHONE/...</p>
+					</div>
+				</div>
+			</div>
+			<div id="con2" class="con">
+				<div class="container padd0 pad">
+					<!--left start-->
+					<div class="col-lg-9 col-md-12 col-sm-12 padd0">
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 c2-l-wrap list">
+							<div style="background:#eee;">
+								<a href="article-list.html" target="_blank">
+								<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+								</a>
+								<div class="info">
+									<a href="">
+										<h5>标题1标题1标题1标题1</h5>
+									</a>
+									<small>描述描述描述描述描述描述</small>
+								</div>
+								<div class="class">
+									<span class="glyphicon glyphicon-th-list"></span>
+									<span>幻灯片和轮播图</span>
+								</div>
+								<div class="state">
+									<span class="glyphicon glyphicon-eye-open"></span>
+									<span class="">22</span>
+									<span class="glyphicon glyphicon-heart"></span>
+									<span class="">66</span>
+									<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+										<span class="glyphicon glyphicon-user"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 c2-l-wrap list">
+							<div style="background:#eee;">
+								<a href="article-list.html" target="_blank">
+								<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+								</a>
+								<div class="info">
+									<a href="">
+										<h5>标题1标题1标题1标题1</h5>
+									</a>
+									<small>描述描述描述描述描述描述</small>
+								</div>
+								<div class="class">
+									<span class="glyphicon glyphicon-th-list"></span>
+									<span>幻灯片和轮播图</span>
+								</div>
+								<div class="state">
+									<span class="glyphicon glyphicon-eye-open"></span>
+									<span class="">22</span>
+									<span class="glyphicon glyphicon-heart"></span>
+									<span class="">66</span>
+									<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+										<span class="glyphicon glyphicon-user"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 c2-l-wrap list">
+							<div style="background:#eee;">
+								<a href="article-list.html" target="_blank">
+								<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+								</a>
+								<div class="info">
+									<a href="">
+										<h5>标题1标题1标题1标题1</h5>
+									</a>
+									<small>描述描述描述描述描述描述</small>
+								</div>
+								<div class="class">
+									<span class="glyphicon glyphicon-th-list"></span>
+									<span>幻灯片和轮播图</span>
+								</div>
+								<div class="state">
+									<span class="glyphicon glyphicon-eye-open"></span>
+									<span class="">22</span>
+									<span class="glyphicon glyphicon-heart"></span>
+									<span class="">66</span>
+									<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+										<span class="glyphicon glyphicon-user"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 c2-l-wrap list">
+							<div style="background:#eee;">
+								<a href="article-list.html" target="_blank">
+								<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+								</a>
+								<div class="info">
+									<a href="">
+										<h5>标题1标题1标题1标题1</h5>
+									</a>
+									<small>描述描述描述描述描述描述</small>
+								</div>
+								<div class="class">
+									<span class="glyphicon glyphicon-th-list"></span>
+									<span>幻灯片和轮播图</span>
+								</div>
+								<div class="state">
+									<span class="glyphicon glyphicon-eye-open"></span>
+									<span class="">22</span>
+									<span class="glyphicon glyphicon-heart"></span>
+									<span class="">66</span>
+									<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+										<span class="glyphicon glyphicon-user"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 c2-l-wrap list">
+							<div style="background:#eee;">
+								<a href="article-list.html" target="_blank">
+								<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+								</a>
+								<div class="info">
+									<a href="">
+										<h5>标题1标题1标题1标题1</h5>
+									</a>
+									<small>描述描述描述描述描述描述</small>
+								</div>
+								<div class="class">
+									<span class="glyphicon glyphicon-th-list"></span>
+									<span>幻灯片和轮播图</span>
+								</div>
+								<div class="state">
+									<span class="glyphicon glyphicon-eye-open"></span>
+									<span class="">22</span>
+									<span class="glyphicon glyphicon-heart"></span>
+									<span class="">66</span>
+									<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+										<span class="glyphicon glyphicon-user"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 c2-l-wrap list">
+							<div style="background:#eee;">
+								<a href="article-list.html" target="_blank">
+								<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+								</a>
+								<div class="info">
+									<a href="">
+										<h5>标题1标题1标题1标题1</h5>
+									</a>
+									<small>描述描述描述描述描述描述</small>
+								</div>
+								<div class="class">
+									<span class="glyphicon glyphicon-th-list"></span>
+									<span>幻灯片和轮播图</span>
+								</div>
+								<div class="state">
+									<span class="glyphicon glyphicon-eye-open"></span>
+									<span class="">22</span>
+									<span class="glyphicon glyphicon-heart"></span>
+									<span class="">66</span>
+									<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+										<span class="glyphicon glyphicon-user"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end left-->
+					<!--right start-->
+					<div class="col-lg-3 visible-lg" style="padding-top:40px;">
+						<ul class="list-group">
+							<a href="" class="list-group-item on">
+								<span class="glyphicon glyphicon-pencil"></span>Html+Css
+							</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-glass"></span>Html(5)+Css3</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-music"></span>Html5</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-heart"></span>CSS3</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-star"></span>Bootstrap</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-star-empty"></span>jquery</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-ok"></span>js</a>
+						</ul>
+					</div>
+					<!--end right-->
+					<div class="con2-page">
+						<ul class="pagination">
+							<li><a href="">&laquo;</a></li>
+							<li class="active"><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">&raquo;</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="con3" class="con" style="height:400px">
+				<div class="container">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-sm hidden-xs c3-left">
+							<div class="c3-logo">
+								<a href="">
+									<img src="images/logo-lg.png" alt="logo-lg" width="100%" height="100%" />
+								</a>
+							</div>
+							<div class="c3-l-info">
+								<p>
+									<span>珞瑜路关山口</span>
+									<span class="glyphicon glyphicon-map-marker"></span>
+								</p>
+								<p>
+									<span>邮箱：</span>
+									<a href="mailto://1046174543@qq.com">1046174543@qq.com</a>
+									<span class="glyphicon glyphicon-envelope"></span>
+								</p>
+							</div>
+					</div>
+					<div class="col-lg-7 col-md-7 hidden-sm hidden-xs c3-right">
+						<form action="">
+							<div class="input-group">
+								<input type="text" placeholder="请输入您的姓名" class="form-control" data-toggle="tooltip" title="请输入您的用户名方便识别" data-placement="left"/>
+							</div>
+							<div class="input-group">
+								<input type="text" placeholder="请输入您的邮箱" class="form-control" data-toggle="tooltip" title="请输入您的邮箱方便联系" data-placement="left"/>
+							</div>
+							<div class="input-group">
+								<textarea class="form-control" rows="5" data-toggle="tooltip" data-placement="left" title="请输入您想留言的内容"></textarea>
+							</div>
+							<div class="input-group">
+								<button type="reset" class="btn btn-warning">重置</button>
+								<button type="submit" class="btn btn-success pull-right">提交</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-lg hidden-md c3-left">
+							<div class="c3-logo">
+								<a href="">
+									<img src="images/logo-lg.png" alt="logo-lg" width="100%" height="100%" />
+								</a>
+							</div>
+							<div class="c3-l-info">
+								<p>
+									<span>珞瑜路关山口</span>
+									<span class="glyphicon glyphicon-map-marker"></span>
+								</p>
+								<p>
+									<span>邮箱：</span>
+									<a href="mailto://1046174543@qq.com">1046174543@qq.com</a>
+									<span class="glyphicon glyphicon-envelope"></span>
+								</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		<!--主体 end-->
+
+		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var $fix = $('#detail-nav');
+				var $window = $(window);
+				var $fixTop = $fix.offset().top;
+				var $body = $(document.body);
+				
+				$window.scroll(function(){
+					var $scrollTop = $(document).scrollTop();
+					if ( $scrollTop>=$fixTop )
+					{
+						$fix.css({'position':'fixed','top':'51px','z-index':'99'});
+						$body.css('padding-top','103px');
+					}else{
+						$fix.css({'top':'0px','position':'relative'});
+						$body.css('padding-top','51px');
+					}
+				});
+
+			});
+		</script>
+	</body>
+</html>

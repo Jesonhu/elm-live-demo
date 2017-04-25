@@ -1,0 +1,25 @@
+1
+	class="col-lg-9 col-md-12 col-sm-12"
+	min-width 1200px时 col-lg-9:75%
+	min-width: 992px   col-md-12:100%
+	min-width: 768px   col-sm-12:100%
+
+2	/*响应式盒子容器*/
+	@media (min-width: 768px) {
+	  .container {
+		width: 750px;
+	  }
+	}
+	@media (min-width: 992px) {
+	  .container {
+		width: 970px;
+	  }
+	}
+	@media (min-width: 1200px) {
+	  .container {
+		width: 1170px;
+	  }
+	}
+
+3 按钮颜色
+分别是白色btn，浅蓝色btn btn-primary，深蓝色btn btn-info，绿色btn btn-success，黄色btn btn-warning，红色btn btn-danger，黑色btn btn-inverse

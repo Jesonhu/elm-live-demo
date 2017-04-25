@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		<meta name="keywords" content="网页关键词（不超过31个字）">
+		<meta name="description" content="关键词描述(不超过76个字)">
+		<meta name="author" content="Jeson">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>列表页</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!--<link rel="stylesheet" href="css/common.css" />-->
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="js/google-code-prettify/prettify.css" />
+		<link rel="stylesheet" href="js/wangeditor/dist/css/wangEditor.min.css" />
+		<script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
+		<style></style>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="prettyPrint()">
+		<!--navbar-start-->
+		<nav class="navbar navbar-inverse navbar-fixed-top nav-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle"  data-toggle="collapse" data-target="#topNav" >
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-logo" >
+						easysolves
+					</a>
+				</div>
+				<div id="topNav" class="navbar-collapse collapse" >
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#"> 
+								<span class="glyphicon glyphicon-th-large"></span>相关介绍
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+								<span class="glyphicon glyphicon-screenshot"></span>技能
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="#skill">
+								<li><a href="">HTML(5)</a></li>
+								<li><a href="">CSS(3)</a></li>
+								<li><a href="">Bootstrap</a></li>
+								<li><a href="">JS/JQ</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#topLogin" data-toggle="modal">
+								<span class="glyphicon glyphicon-envelope"></span>登录注册
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--模态框 start-->
+			<div class="modal fade" id="topLogin" aria-hidden="true" aria-labelledby="#topLoginTitle">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 id="topLoginTitle">赶紧加入我们吧！！！</h4>
+						</div>
+						<div class="modal-body">
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon">邮箱：</span>
+								<input type="input" class="form-control" name="login-email" />
+							</div>
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon">密码：</span>
+								<input type="password" class="form-control" name="login-pwd" />
+								<span class="input-group-btn">
+									<button class="btn btn-success" type="button">登录</button>
+								</span>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="m-f-aLink clearfix">
+								<a href="" class="fl">忘记密码？</a>
+								<a href="" class="fr">注册新用户</a>
+							</div>
+							<div class="footer-icon">
+							页脚最底部
+								
+							
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		<!--end 模态框-->
+		<!--end navbar-->
+		
+		<!--主体 start-->
+		<div id="list-content">
+			<div class="container">
+				<div class="row">
+					<!--left-start-->
+					<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 boxInit info-content">
+						<div class="l-c-i-wrap">
+							<div class="l-c-header">
+								<h1>Flowplayer视频播放插件</h1>
+								<ol class="breadcrumb boxInit">
+									<li><a href="javascript:;">Home</a></li>
+									<li><a href="javascript:;">Html+jq</a></li>
+									<li class="active">轮播效果</li>
+								</ol>
+								<div class="l-c-h-state">
+									<div class="l-c-h-s-left">
+										<span class="eye" data-toggle="tooltip" title="浏览量" data-placement="top">
+											<em class="glyphicon glyphicon-eye-open"></em>
+											11
+										</span>
+										<span class="heart" data-toggle="tooltip" title="喜欢量" data-placement="top">
+											<em class="glyphicon glyphicon-heart"></em>
+											22
+										</span>
+										<span class="comment" data-toggle="tooltip" title="评论量" data-placement="top">
+											<em class="glyphicon glyphicon-comment"></em>
+											333
+										</span>
+									</div>
+									<div class="l-c-h-s-right pull-right hidden-sm hidden-xs">
+										<span style="display:block;float:left;padding-top:3px;">分享到：</span>
+										<div class="bdsharebuttonbox" style="display:inline-block;"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></div>
+										<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="l-c-i-con1">
+							<div class="info-con1">
+								<img src="images/info1.jpg" alt="info1" width="100%" />
+								<img src="images/10.png" alt="10" width="100%"/>
+								<div class="link">
+									<a href="" class="btn btn-success" target="_blank">
+										<em class="glyphicon glyphicon-eye-open"></em>
+										查看演示
+									</a>
+									<a href="" class="btn btn-primary" target="_blank">
+										<em class="glyphicon glyphicon-globe"></em>
+										websit
+									</a>
+									<a href="" class="btn btn-warning" target="_blank">
+										<em class="glyphicon glyphicon-save"></em>
+										立即下载
+									</a>
+								</div>
+								<div class="alert cj-info">
+									插件描述：FlowPlayer 是一个Web上的视频播放器，可以很容易将它集成在任何的网页上。支持HTTP以及流媒体传输。
+								</div>
+								<p class="text-info">代码展示:</p>
+								<pre class="prettyprint linenums Lang-html">&lt;script&nbsp;src=&quot;https://code.jquery.com/jquery-1.11.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&nbsp;src=&quot;flowplayer.min.js&quot;&gt;&lt;/script&gt;</pre>
+							</div>
+						</div>
+						<div class="l-c-r-con2 clearfix">
+							<div class="pw pull-left text-left page-nav">PREVIOUS:</div>
+							<div class="pw pull-left text-right page-nav">NEXT:</div>
+							<div class="pw pull-left text-left owt"><a href=""><small>o(╯□╰)o到头了</small></a></div>
+							<div class="pw pull-left text-right owt">
+								<a href="">
+									<small>
+										aaaaaa
+									</small>
+								</a>
+							</div>
+						</div>
+						<div class="l-c-r-con3">
+							<h4 class="boxInit">相关插件-音频和视频</h4>
+							<ul class="clearfix">
+								<li class="col-lg-3 col-md-6 col-sm-12 col-xs-12 list">
+									<div>
+										<a href="article-list.html" target="_blank">
+											<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+										</a>
+										<div class="info">
+											<a href="">
+												<h5>标题1标题1标题1标题1</h5>
+											</a>
+											<small>描述描述描述描述描述描述</small>
+										</div>
+										<div class="class">
+											<span class="glyphicon glyphicon-th-list"></span>
+											<span>幻灯片和轮播图</span>
+										</div>
+										<div class="state">
+											<span class="glyphicon glyphicon-eye-open"></span>
+											<span class="">22</span>
+											<span class="glyphicon glyphicon-heart"></span>
+											<span class="">66</span>
+											<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+												<span class="glyphicon glyphicon-user"></span>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-lg-3 col-md-6 col-sm-12 col-xs-12 list">
+									<div>
+										<a href="article-list.html" target="_blank">
+											<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+										</a>
+										<div class="info">
+											<a href="">
+												<h5>标题1标题1标题1标题1</h5>
+											</a>
+											<small>描述描述描述描述描述描述</small>
+										</div>
+										<div class="class">
+											<span class="glyphicon glyphicon-th-list"></span>
+											<span>幻灯片和轮播图</span>
+										</div>
+										<div class="state">
+											<span class="glyphicon glyphicon-eye-open"></span>
+											<span class="">22</span>
+											<span class="glyphicon glyphicon-heart"></span>
+											<span class="">66</span>
+											<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+												<span class="glyphicon glyphicon-user"></span>
+											</a>
+										</div>
+									</div>
+								</li><li class="col-lg-3 col-md-6 col-sm-12 col-xs-12 list">
+									<div>
+										<a href="article-list.html" target="_blank">
+											<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+										</a>
+										<div class="info">
+											<a href="">
+												<h5>标题1标题1标题1标题1</h5>
+											</a>
+											<small>描述描述描述描述描述描述</small>
+										</div>
+										<div class="class">
+											<span class="glyphicon glyphicon-th-list"></span>
+											<span>幻灯片和轮播图</span>
+										</div>
+										<div class="state">
+											<span class="glyphicon glyphicon-eye-open"></span>
+											<span class="">22</span>
+											<span class="glyphicon glyphicon-heart"></span>
+											<span class="">66</span>
+											<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+												<span class="glyphicon glyphicon-user"></span>
+											</a>
+										</div>
+									</div>
+								</li><li class="col-lg-3 col-md-6 col-sm-12 col-xs-12 list">
+									<div>
+										<a href="article-list.html" target="_blank">
+											<img src="http://assets.jq22.com/plugin/2016-04-14-11-04-11.jpg" alt="001" />
+										</a>
+										<div class="info">
+											<a href="">
+												<h5>标题1标题1标题1标题1</h5>
+											</a>
+											<small>描述描述描述描述描述描述</small>
+										</div>
+										<div class="class">
+											<span class="glyphicon glyphicon-th-list"></span>
+											<span>幻灯片和轮播图</span>
+										</div>
+										<div class="state">
+											<span class="glyphicon glyphicon-eye-open"></span>
+											<span class="">22</span>
+											<span class="glyphicon glyphicon-heart"></span>
+											<span class="">66</span>
+											<a href="" class="c2-s-yh" data-toggle="tooltip" data-original-title="Jeson">
+												<span class="glyphicon glyphicon-user"></span>
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="l-c-r-con4 visible-lg visible-md">
+							<div id="wangeditor" style="height:200px;"></div>
+							<div class="clearfix" style="width:90%;margin:0 auto;margin-bottom:10px">
+								<button type="submit" class="btn btn-primary pull-right">发表评论</button>
+							</div>
+							
+						</div>
+					</div>
+					<!--end-left-->
+					<!--right start-->
+					<div class="col-lg-3 visible-lg cata-right">
+						<div class="l-c-r-author clearfix">
+							<h5>PROMULGATOR</h5>
+							<div class="clearfix">
+								<div class="l-c-r-a-left"><a href="">Jeson</a></div>
+								<div class="l-c-r-a-right">
+									<p>Jeson</p>
+									<p><em class="glyphicon glyphicon-map-marker"></em></p>
+								</div>
+							</div>
+							<div class="input-group">
+								<p>
+									<button type="button" class="btn btn-default"><em class="glyphicon glyphicon-plus-sign"></em>关注作者<span>(1)</span></button>
+								</p>
+								<p><button type="button" class="btn btn-default"><em class="glyphicon glyphicon-star-empty"></em>收藏此插件<span>(66)</span></button></p>
+							</div>
+						</div>
+						<div class="input-group input-group-sm">
+							<input type="text" class="form-control"/>
+							<span class="input-group-btn">
+								<button type="button" class="btn btn-success">
+									搜索
+								</button>
+							</span>
+						</div>
+						<ul class="list-group" style="margin-top:20px">
+							<a href="" class="list-group-item on">
+								<span class="glyphicon glyphicon-pencil"></span>Html+Css
+							</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-glass"></span>Html(5)+Css3</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-music"></span>Html5</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-heart"></span>CSS3</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-star"></span>Bootstrap</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-star-empty"></span>jquery</a>
+							<a href="" class="list-group-item"><span class="glyphicon glyphicon-ok"></span>js</a>
+						</ul>
+					</div>
+					<!--end right-->
+				</div>
+			</div>
+		</div>
+		<!--主体 end-->
+
+		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/wangeditor/dist/js/wangEditor.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+		<script type="text/javascript">
+			$(function(){
+				//wangeditor插件使用
+					var editor = new wangEditor('wangeditor');
+
+					// 上传图片
+					editor.config.uploadImgUrl = '/upload';
+					editor.create();
+					$('.wangEditor-container').css({'width':'90%','margin':'10px auto'});
+			});
+		</script>
+	</body>
+</html>

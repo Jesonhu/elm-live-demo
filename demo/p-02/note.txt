@@ -1,0 +1,16 @@
+$liOne.hover(function(){
+			$liHide.stop().slideDown(300);
+		},function(){
+			$liHide.stop().slideUp(300);
+		});
+		//放到隐藏区域也不会消失
+		$liHide.hover(function(){
+			$(this).stop().show();
+		},function(){
+			$(this).stop().slideUp(300);
+		});
+		//不同的li展示对应的内容
+		$liOne.hover(function(){
+			var index =$(this).index(); //得到自己的序列号
+			$hideUl.eq(index).show().siblings().hide(); //对应的ul显示并隐藏兄弟ul
+		});

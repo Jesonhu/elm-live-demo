@@ -1,0 +1,37 @@
+1 a 标签没有设置为块级元素的时候 即行内元素的padding-top/bottom margin-top/bottom没有用
+
+2 字体类型不一样，大小一样但默认占的行高不一样;同一种字体，大小不一样默认占得行高也不一样---------字体的大小和默认的行高有一定的关系
+
+3 只有定位元素才能使用z-index
+
+4 vertical-align:middle;/*!!!文字和图片的对齐方式*/
+
+5 外边距margin的合并问题
+
+6 float bug使父元素塌陷
+
+7 子宽高度的百分比尺寸：
+	1 父元素块有宽高度
+        2 绝对定位元素的宽高度会相对于其定位的元素
+
+8 css子元素继承问题 
+1 继承的元素在子元素中设置下
+2 父元素和子元素有冲突的，父元素加上 class 或者id不要用泛标签控制
+
+9 banner图片问题处理
+
+10 input默认边框处理和获得光标是的框处理
+	outline:0px;
+	border:0px currentColor;
+
+	input:focus{outline:none;}
+
+11 font复合属性 和font-weight冲突解决方法
+
+12 min-width
+
+13 a的提示title
+
+14 图片格式 <img src="" width="" height="" alt=""/>
+
+15 块级元素才能用text-align:center;
