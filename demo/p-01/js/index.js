@@ -50,10 +50,13 @@
 	$('ul.n-c-list li',$NavWrap).hover(function(){
 		index = $(this).index();
 		$(this).addClass('hover').siblings().removeClass('hover');
-		$(this).children('a').eq(0).hide().parent().siblings().children('a').show();
+		let $positionLeft = $(this).position().left; // 当前li相对于ul的偏移量
+		$(this).children('a').eq(0).hide()
+		.parent().siblings().children('a').show();
 		$('div.n-c-s-list ul',$NavWrap).eq(index).show().siblings().hide();
-		$('em.row-icon',$NavWrap).show().stop().animate({
-			left:$(this).offset().left-55 + 'px'
+		// console.log( $('em.row-icon',$NavWrap).position().left );
+		$('em.row-icon',$NavWrap).show().stop().animate({ 
+			left:($positionLeft+55) + 'px' // offset() 获取匹配元素在当前视口的相对偏移 position 获取匹配元素相对父元素的偏移。
 		},200);
 	});
 })();
