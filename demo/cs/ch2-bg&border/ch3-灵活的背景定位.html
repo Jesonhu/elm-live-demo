@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .dry1{
+            background: url(http://csssecrets.io/images/code-pirate.svg)
+	                    no-repeat #58a;
+	        background-position: right 10px bottom 10px;
+
+            max-width: 10em;
+            min-height: 5em;
+            padding: 10px;
+            color: white;
+            font: 100%/1 sans-serif;
+        }
+        .dry2{
+            background: url(http://csssecrets.io/images/code-pirate.svg)
+	                    no-repeat bottom right #58a;
+	        background-position: right 10px bottom 10px;
+
+            max-width: 10em;
+            min-height: 5em;
+            padding: 10px;
+            color: white;
+            font: 100%/1 sans-serif;
+        }
+        .dry3{
+            padding:10px;
+            background: url(http://csssecrets.io/images/code-pirate.svg)
+                    no-repeat #58a;
+            background-position: right 10px bottom 10px;
+
+            max-width: 10em;
+            min-height: 5em;
+            padding: 10px;
+            color: white;
+            font: 100%/1 sans-serif;
+        }
+
+        .dry4{
+            padding:10px;
+            background: url(http://csssecrets.io/images/code-pirate.svg)
+                    no-repeat #58a;
+
+            background-position: right 0px bottom 0px;  /* 可以额外设置偏移量 */
+
+            background-origin: content-box;
+
+            max-width: 10em;
+            min-height: 5em;
+            padding: 10px;
+            color: white;
+            font: 100%/1 sans-serif;
+        }
+        .dry5{
+            background: url(http://csssecrets.io/images/code-pirate.svg)
+                    no-repeat #58a;
+            background-position: calc(100% - 20px) calc(100% - 10px); 
+
+            max-width: 10em;
+            min-height: 5em;
+            padding: 10px;
+            color: white;
+            font: 100%/1 sans-serif;      
+        }
+    </style>
+</head>
+<body>
+    <!--
+        固定尺寸容器--对容器某个角对背景图片做偏移定位
+
+            1 background-position 的扩展语法方案 background-position: right 10px bottom 10px;
+
+            2 background-origin 方案 
+                当特殊情况：偏移量与内边距一致
+                padding：10px;
+                background: url(http://csssecrets.io/images/code-pirate.svg)
+	                    no-repeat #58a;
+	            background-position: right 10px bottom 10px;
+
+                自动跟着内边距走，background-position:top left; (每个元素有三个边框：border box边框的外边框，padding box内边距的外沿框，content box内容区的外沿框)，默认padding box左上角
+                background-origin:可以改变这种行为，默认padding-box
+
+            3 calc() 方案    
+
+    -->
+    <div class="dry1"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="dry2">回退兼容方案-不跑到左上角</div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="dry3">特殊情况</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="dry4">background-origin改变默认行为</div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="dry5">calc()方案</div>
+</body>
+</html>

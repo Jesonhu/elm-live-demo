@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="https://github.com/sofish/typo.css/blob/master/typo.css">
+  <script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+  <style>
+    img{
+      max-width:100%;
+    }
+  </style>
+</head>
+<body>
+    <!--1 github创建一个仓库
+        2 在线创建一index.html，输入内容
+        3 settings>Source>master
+    -->
+  <div id="app">
+   ## 一篇博客markdown博客 
+   **hello**
+    ![]()
+    <img src="https://pic1.zhimg.com/626d03f4fa1021d46dec5b5bbc5163d8_l.jpeg" alt="">
+    > 网上的名人
+  </div>
+  
+  <script>
+    let content = document.getElementById('app').innerHTML; // 获取content内容
+    let html = marked(content); // 转换为markdown的内容
+    document.getElementById('app').innerHTML = html; // 转换后的内容再添加到conent里面
+  </script>
+</body>
+</html>

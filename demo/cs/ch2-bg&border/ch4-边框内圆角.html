@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .dry1{
+            width:100px;
+            height:100px;
+            margin:40px auto;
+            background:red;
+            padding:10px;
+        }
+        .dry1 > div{
+            height:100px;
+            background:green;
+            border-radius:5px;
+        }
+        .dry2{
+            width:100px;
+            height:100px;
+            margin:40px auto;
+            background:red;
+            padding:10px;
+
+            border-radius: 5px;
+            box-shadow: 0 0 0 5px #665;
+            outline: 10px solid #655;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        内侧圆角 四边直角
+        1 两个元素方案
+        2 一个元素 描边 扩张阴影（扩张值：圆角半径的一半）
+    -->
+
+    <div class="dry1">
+        <div>nice-两个元素</div>
+    </div>
+
+    <div class="dry2">nice-一个元素</div>
+</body>
+</html>

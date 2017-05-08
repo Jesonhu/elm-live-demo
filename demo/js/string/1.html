@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 转义字符串 */
+        function htmlEscape(str) {
+                return str.replace(/[<>"&]/g, (item, index, originStr) => {
+                     switch (item) {
+                        case '<':
+                            return '&lt;'; 
+                        case '>':
+                            return  '&gt;';
+                        case '&':
+                            return '&amp;';
+                        case '\"':
+                            return '&quot;';            
+                     }   
+                })
+        };
+        let str = "<p>123</p><br>"
+        console.log( htmlEscape(str) ); // '&lt;p&gt;123&lt;/p&gt;&lt;br&gt;'
+        document.body.innerHTML = htmlEscape(str);
+    </script>
+</body>
+</html>

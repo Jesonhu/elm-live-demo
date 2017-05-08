@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .dry1 {
+            width:200px;
+            height:200px;
+            margin:20px auto;
+
+            background:red;
+            box-shadow: 0 0 0 10px #655;
+        }
+        .dry2 {
+            width:200px;
+            height:200px;
+            padding:20px;
+            margin:50px auto;
+
+            background:red;
+            box-shadow: 0 0 0 10px #655, 
+                        0 0 0 15px green;
+        }
+        .dry3{
+            width:200px;
+            height:200px;
+            margin:30px auto;
+
+            background:red;
+            border:10px solid #655;
+            outline: 5px solid green;
+        }
+        .dry4{
+            width:200px;
+            height:200px;
+            margin:30px auto;
+
+            background:red;
+            border:10px solid #655;
+            outline: 5px solid green;
+            outline-offset: -25px;
+        }
+        .dry5{
+            width:200px;
+            height:200px;
+            margin:30px auto;
+
+            background:red;
+            border:10px solid #655;
+            border-radius: 8px;
+            outline: 5px solid green;
+        }
+        .dry6{
+            width:200px;
+            height:200px;
+            margin:30px auto;
+
+            background:red;
+            border:10px solid #655;
+            border-radius: 8px;
+            outline: 5px solid green;
+            box-shadow: 0 0 0 4px green;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1 box-shadow 投影方案
+            第四个参数：扩张半径 +- 让投影面积加大或减少 。一个正值得扩张半径 + 2个0的偏移量 + 0模糊值-- 得到的投影就是一道实线边框
+            注意 
+                box-shadow 是叠加的
+                投影行为跟边框不完全一致，投影不受布局、box-sizing影响，虽然可以内（投影内嵌）外（投影扩张）边距模拟边框需要占据的空间。
+                点击或悬停默认不在范围内
+
+        2 outline 方案  
+            好处：一体 至少边框可以点击；可以通过outline-offset控制跟元素边缘间的边距  
+            缺点：只有两层，不贴合圆角(可以用阴影解决) 被认为是一个bug未来可能会被修复   
+    -->
+
+    <div class="dry1">111</div>
+
+    <div class="dry2">222</div>
+
+    <div class="dry3">333</div>
+
+    <div class="dry4">444</div>
+
+    <div class="dry5">555</div>
+
+    <div class="dry6">666</div>
+
+    <script>
+        let oDry2 = document.getElementsByClassName('dry2')[0];
+        let oDry3 = document.getElementsByClassName('dry3')[0];
+
+        // oDry2.onclick = function() {
+        //     console.log(2);    
+        // };
+
+        oDry2.addEventListener('click', function(){
+           console.log(1);     
+        }, false);
+        oDry3.addEventListener('click', function(){
+           console.log(1);     
+        }, false);
+    </script>
+</body>
+</html>

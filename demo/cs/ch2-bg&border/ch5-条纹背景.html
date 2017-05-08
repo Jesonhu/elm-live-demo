@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .dry1{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(#fb3, #58a);
+        }
+        .dry2{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(#fb3 20%, #58a 80%);
+        }
+        .dry3{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(#fb3 50%, #58a 50%);
+        }
+        .dry4{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(#fb3 50%, #58a 50%);
+            background-size:100% 30px;
+        }
+
+        .dry5{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(#fb3 30%, #58a 0) no-repeat;
+            background-size:100% 30px;
+        }
+
+        .dry6{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0) no-repeat;
+            background-size:100% 30px;
+        }
+
+        .dry7{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(to right, #fb3 50%, #58a 0) no-repeat;
+            background-size:100% 30px;
+        }
+
+        .dry8{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(90deg, #fb3 50%, #58a 0) no-repeat;
+            background-size:100% 30px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        过渡背景 linear-gradient()
+            background:linear-gradient(#fb3, #58a); 垂直过渡 参数1顶部开始颜色 参数2底部结束颜色
+            background:linear-gradient(#fb3 20%, #58a 80%); 顶部和底部20%区域填充实色
+
+            // 渐变块都压缩到了15px高，默认背景平铺 repeat
+            background:linear-gradient(#fb3 50%, #58a 50%);
+            background-size:100% 30px;
+    -->
+
+    <div class="dry1">默认垂直过渡</div>
+
+    <div class="dry2">垂直过渡拉近</div>
+
+    <div class="dry3">分解鲜明过渡</div>
+
+    <div class="dry4">背景渐变颜色缩小</div>
+
+    <div class="dry5">接近diy</div>
+
+    <div class="dry6">三个颜色</div>
+
+    <div class="dry7">垂直to right</div>
+
+    <div class="dry8">90deg</div>
+
+</body>
+</html>

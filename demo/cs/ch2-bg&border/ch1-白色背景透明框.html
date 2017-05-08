@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        body{
+            background:green;
+        }
+        .dry1{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            color:#000;
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            border-style: dotted;
+            background:#fff;
+        }
+        .dry2{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            color:#000;
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background:#fff;
+            background-clip:padding-box;
+        }
+    </style>
+</head>
+<body>
+    <!--
+       默认情况下，背景会延伸到边框下层--验证，给有背景元素设置虚线边框 
+       1 background-clip默认border-box -- 背景会被元素的boder box 边框的外边沿 裁切掉  
+
+    -->
+    <div class="dry1">111</div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="dry2">222</div>
+</body>
+</html>

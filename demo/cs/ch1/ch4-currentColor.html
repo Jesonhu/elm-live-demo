@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        hr {
+            height:.5em;
+            background: currentColor;
+        }
+        p{
+            color:currentColor;
+            border:1px solid currentColor;
+            outline: 2px solid currentColor;
+            text-shadow: 0 2px 3px currentColor;
+            box-shadow:0 2px 3px currentColor;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1 假设让所有水平分割线<hr>自动与文本颜色保持一致 currentColor
+    -->
+
+    <div style="color:red">
+        文字文字文字文字文字
+        <p>ppppppppp</p>
+        <hr>
+    </div>
+
+    <div style="color:blue">
+        文字文字文字文字文字
+        <p>ppppppppp</p>
+        <hr>
+    </div>
+
+</body>
+</html>

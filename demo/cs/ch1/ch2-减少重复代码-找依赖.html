@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div.father{
+            font-size:16px;
+        }
+        .btn1 {
+            padding:6px 16px;
+            border:1px solid #446d88;
+            border-radius:4px;
+            color:white;
+            font-size:20px;
+            line-height: 30px;
+            box-shadow:0 1px 5px gray;
+            text-shadow:0 -1px 1px #335166;
+            background:#58a linear-gradient(#77a0bb, #58a);
+        }
+        .btn2 {
+            padding:.3em .8em;
+            border: 1px solid rgba(0,0,0,.1);
+            background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+
+            border-radius:.2em;
+            box-shadow:0 .05em .25em rgba(0,0,0,.5);
+            color:white;
+            text-shadow:0 -.05em .05em rgba(0,0,0,.5);    
+        }
+    </style>
+</head>
+<body>
+    <!--
+       1. 行高是字号的1.5倍 
+            font-size:20px;
+            line-height:1.5;
+
+       2 相关性
+            eg: 父级 font-size:16px;
+                本身尺寸/16 = xxx em
+
+       3 不需要变化的固定 
+            边框 1px
+
+       4 分析如何设置弹性属性，颜色如何设置
+            1. 考虑不同背景：把半透明的黑色和白色叠加到主色调上 
+
+    -->
+    <div class="father">
+
+        <button class="btn1">Yes!</button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="btn2">Yes2!</div>
+    </div>
+</body>
+</html>
