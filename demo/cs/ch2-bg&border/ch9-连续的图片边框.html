@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        body{
+            font-size:12px;
+        }
+        .button {
+            display: inline-block;
+            padding: .5em 1em;
+            border: 0; 
+            margin: .5em;
+            background: #58a;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font: bold 200%/1 sans-serif;
+
+            transform: skewX(45deg);
+        }
+
+        /* 文字正常显示 */
+        .button > div { transform: skewX(-45deg); }
+
+        /* 图片边框 border-image 九宫格伸缩法*/
+        .border-img1{
+            background:url(http://csssecrets.io/images/stone-art.jpg);
+            background-size:cover;  /* cover  保证最小边完全显示 */
+            padding:1em;
+        }
+        /* 覆盖图片背景 */
+        .border-img1 .in{
+            background:#fff;
+            padding:1em;
+        }
+
+        /** 一个元素图片背景方法 
+         * 在背景图片上再叠加一层纯色背景（技术支持：css渐变和背景扩展）   
+         */
+         div.border-img2{
+             margin:10px;
+             padding:1em;
+             border:1em solid transparent;
+             background:linear-gradient(#fff, #fff), url(http://csssecrets.io/images/stone-art.jpg);
+             background-size:cover;
+             background-clip:padding-box, border-box; 
+         }
+         /* 看着怪异原因：background-origin:padding-box 此时显示图片取决于paddding box的尺寸，还被放置在了padding box原点上-左上角 */
+         div.border-img3{
+             margin:10px;
+             padding:1em;
+             border:1em solid transparent;
+             background:linear-gradient(#fff, #fff), url(http://csssecrets.io/images/stone-art.jpg);
+             background-size:cover;
+             background-clip:padding-box, border-box;
+             background-origin: border-box; 
+         }
+
+         /* border-image入门 */
+         .border-img0{
+            margin:20px auto; 
+            border: 40px solid transparent;
+            border-image: 33.334% url('data:image/svg+xml,<svg xmlns="http:%2F%2Fwww.w3.org%2F2000%2Fsvg" width="30" height="30"> \
+                                <circle cx="5" cy="5" r="5" fill="%23ab4"%2F><circle cx="15" cy="5" r="5" fill=" %23655"%2F> \
+                                <circle cx="25" cy="5" r="5" fill="%23e07"%2F><circle cx="5" cy="15" r="5" fill=" %23655"%2F> \
+                                <circle cx="15" cy="15" r="5" fill="hsl(15, 25%, 75%)"%2F> \
+                                <circle cx="25" cy="15" r="5" fill=" %23655"%2F><circle cx="5" cy="25" r="5" fill="%23fb3"%2F> \
+                                <circle cx="15" cy="25" r="5" fill=" %23655"%2F><circle cx="25" cy="25" r="5" fill="%2358a"%2F><%2Fsvg>');
+            border-image-repeat: stretch;                      
+            padding: 1em;
+            max-width: 20em;
+            font: 130%/1.6 Baskerville, Palatino, serif;   
+         }
+         .border-img02{
+	        border-image-repeat: round;    
+         }
+
+         /* 信封 */
+         .border-xf1{
+             width:200px;
+             height:200px;
+             padding:1em;
+             margin:10px;
+
+             border:16px solid transparent;
+             border-image:16 repeating-linear-gradient(-45deg, 
+                          red 0, red 1em,
+                            transparent 0, transparent 2em,
+                            #58a 0, #58a 3em,
+                            transparent 0, transparent 4em) ;
+         }
+         /* 问题解决
+            1 每次改动border-image-slice同时需要修改border-width来让它们匹配
+            2 不能在border-image-slice 使用em,必须px
+            3 条纹的宽度需要在色标的位置信息中写好
+          */
+          .border-xf2{  /*宽度要设置好*/
+             padding: 2.2em;
+
+             border: 16px solid transparent;
+             border-image: 16 repeating-linear-gradient(-45deg, 
+                        red 0, red 1em, 
+                        transparent 0, transparent 2em,
+                        #58a 0, #58a 3em, transparent 0, transparent 4em);
+            
+             max-width: 20em;
+             font: 100%/1.6 Baskerville, Palatino, serif;               
+         }
+
+         /* 蚂蚁行军边框 */
+         @keyframes ants{
+             to {
+                 background-position: 100% 100%;
+             }
+         }
+         .marching-ants{
+             width:200px;
+             height:200px;
+             margin:30px;
+
+             border: 1px solid transparent; /* 边框必须有 */
+             background:
+                linear-gradient(#fff, #fff) padding-box,
+                repeating-linear-gradient(-45deg,
+                #000 0, #000 25%, #fff 0, #fff 50%) 0 / .6em .6em;
+                
+             animation: ants 12s linear infinite;
+         }
+         .marching-ants2{
+            padding: 1em;
+            border: 1px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                        repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+            animation: ants 12s linear infinite;
+            
+            max-width: 20em;
+            font: 100%/1.6 Baskerville, Palatino, serif;
+         }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <div>click me</div>
+    </div>
+    <div class="button">
+        <div>click me</div>
+    </div>
+
+    <div class="border-img1">
+        <div class="in">this is a border image</div>
+    </div>
+
+    <div class="border-img2">
+        this is a border image
+    </div>
+
+    <div class="border-img3">
+        this is a border image
+    </div>
+
+    <div class="border-img0 border-img01">111</div>
+
+    <div class="border-img0 border-img02">111</div>
+
+    <div class="border-xf1">信封</div>
+
+    <div class="border-xf2">信封</div>
+
+    <div class="marching-ants">行军蚁</div>
+    <div class="marching-ants2">行军蚁</div>
+</body>
+</html>

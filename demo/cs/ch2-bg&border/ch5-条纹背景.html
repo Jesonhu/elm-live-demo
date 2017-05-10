@@ -71,6 +71,42 @@
             background:linear-gradient(90deg, #fb3 50%, #58a 0) no-repeat;
             background-size:100% 30px;
         }
+
+        .dry9{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(45deg, #fb3 50%, #58a 0);
+            background-size:30px 30px;
+        }
+
+        .dry10{
+            width:100px;
+            height:100px;
+            margin:30px auto;
+
+            background:linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-size:42.43px 42.43px; 
+            /* 如果想让条纹的宽度为15px 就需要将background-size指定为 2x15 开平方2 */
+        }
+        .dry11{
+            width: 300px;
+            height:10px;
+            margin: 30px auto;
+
+            background:linear-gradient(to right, red 25%, blue 0, blue 50%, green 0, green 75%, yellow 0, yellow 100%);    
+        }
+
+        /* 同色系条纹 */
+        .dry12{
+            width:300px;
+            height:300px;
+            margin:30px auto;
+
+            background:linear-gradient(30deg, #79b 0, #79b 15px, #58a 0, #58a 30px);
+            background:linear-gradient(60deg, #fb3 0 15px, #58a 0 30px);
+        }
     </style>
 </head>
 <body>
@@ -99,6 +135,14 @@
     <div class="dry7">垂直to right</div>
 
     <div class="dry8">90deg</div>
+
+    <div class="dry9">斜向条纹失败</div>
+
+    <div class="dry10">斜向条纹成功</div>
+
+    <div class="dry11"></div>
+
+    <div class="dry12"></div>
 
 </body>
 </html>
