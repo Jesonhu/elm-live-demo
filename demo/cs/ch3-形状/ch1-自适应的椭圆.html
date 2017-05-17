@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        /* 超过正方形边长的一半就能为圆形 */
+        .yuan1{
+            width:200px;
+            height:200px;
+            background:yellow;
+            border-radius:100px; 
+        }
+        /** 根据内容自动调整形状 可为圆或椭圆 
+         * border-radius可以单独水平和垂直半径 用/分割
+         */
+        .yuan2{
+            width:200px;
+            height:150px;
+            border-radius: 100px / 75px;
+            background:red;
+        }
+        /* 缺陷：内容变，border-radius也跟着变 */
+        /* 不仅可以接受长度值，还可以接受百分比：基于元素的尺寸进行解析 */
+        .yuan3{
+            width:200px;
+            height:150px;
+            border-radius:50% / 50%;  /* 简化为 50% */
+            background:blue;
+        }
+        /* border-radius:topleft topright bottomright bottomleft 
+           三个值得时候：bottomleft 与 topright相同
+           甚至可以为所有四个角提供完全不同的水平和垂直半径 斜杠前指定1~4个值,斜杠后也指定1~4个值
+           10px / 5px 20px 相当于
+           10px 10px 10px 10px / 5px 20px 5px 20px
+        */
+
+        .yuan4{
+            width:200px;
+            height:200px;
+
+            border-radius:50% 50% 0 0;
+            background:yellow;
+        }
+        /* 想要的效果： */
+        .yuan5{
+            width:200px;
+            height:200px;
+
+            border-radius:50% 50% 0 0 / 100% 100% 0 0;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="yuan1"></div>
+
+    <div class="yuan2"></div>
+
+    <div class="yuan3"></div>
+
+    <div class="yuan4"></div>
+
+    <div class="yuan5"></div>
+</body>
+</html>
